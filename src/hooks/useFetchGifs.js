@@ -16,7 +16,7 @@ export const useFetchGifs = (category) => { // este custom hook sirve  para espe
                         data: imgs,
                         loading: false
                     });
-                }, 3000)
+                })              // se le saca 3000 seg para que ande el useFetchGifs.test.js
             )
             .catch(error => console.log(error));
     }, [category]);         // si la category cambia se ejecutara otra vez el useEffect

@@ -16,7 +16,7 @@ const GifExpertApp = (props) => {
       <AddCategory setCategories={setCategories} />
       <hr />
 
-      <button onClick={handleAdd}>Agregar</button>
+      <button onClick={handleAdd} className="btn btn-primary mt-2">Agregar</button> {/* revisar funcionalidad de este boton */}
       <ol>
         {
           categories.map(category => {
